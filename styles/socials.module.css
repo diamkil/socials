@@ -1,0 +1,25 @@
+.social {
+    display:flex;
+    align-items:center;
+    background-color:#171717;
+    height:75px;
+    border-bottom:solid #363535;
+    border-width:1px 0;
+}
+
+.socialimg {
+    height:55px;
+    padding:1%;
+}
+
+.link {
+    text-decoration:none;
+}
+
+.link:visited {
+    color:#fff;
+}
+
+.linktitle {
+    color:#fff;
+}

@@ -1,25 +1,21 @@
-a {
-    text-decoration:none;
+.container {
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-a:visited {
-    color:#fff;
-}
-
-.social-links {
+.sociallinks {
     padding-top:0;
     height:100vh;
     background-color:#000;
-}
-
-h3 {
-    color:#fff;
 }
 
 .user {
     display:flex;
     align-items:center;
     background-color:#56878d;
+    border-bottom:solid #363535;
+    border-width:1px 0;
 }
 
 .userimg {
@@ -37,23 +33,4 @@ h3 {
     overflow:hidden;
     margin-left:10px;
     color:#fff;
-}
-
-.social {
-    display:flex;
-    align-items:center;
-    background-color:#171717;
-    height:75px;
-    border-bottom:solid #363535;
-    border-width:1px 0;
-}
-
-.socialimg {
-    height:55px;
-    padding:1%;
-}
-
-.top-border {
-    border-top:solid #363535;
-    border-width:1px 0;
 }
