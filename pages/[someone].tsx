@@ -20,7 +20,7 @@ export default function Home({ socialsData, userName }) {
           />
           <h1 className={styles.userh1}>Félix Pratt</h1>
         </div>
-        {Object.entries(socialsData.socials).map(([id, value]) => (
+        {Object.entries(socialsData.socials).map(([id, value]:[string, string]) => (
           <div>
             <a href={value} target="_blank" rel="noreferrer" className={styles.social}>
                 <img className={styles.socialimg} src={"/img/" + _.toLower(id) + ".png"} alt={_.startCase(id)}/>

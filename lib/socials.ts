@@ -15,7 +15,7 @@ export function getAllPeopleIds() {
     })
 }
 
-export async function getPeopleData(id) {
+export async function getPeopleData(id:string) {
     const fullPath = path.join(informationDirectory, `${id}.json`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
