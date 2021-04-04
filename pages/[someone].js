@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/someone.module.css'
-import { getPeopleData, socialLink } from '../lib/socials'
+import { getPeopleData } from '../lib/socials'
+import _ from 'lodash'
 
-export default function Home({ socialsData, snapLink }) {
+export default function Home({ socialsData }) {
   return (
     <div className={styles.container}>
       <div className={styles.sociallinks}>
@@ -19,8 +20,14 @@ export default function Home({ socialsData, snapLink }) {
           />
           <h1 className={styles.userh1}>Félix Pratt</h1>
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: snapLink }}/>
+        {Object.entries(socialsData.socials).forEach(([key, value]) => {
+          <div>
+            <a href={value} className={styles.social}>
+                <img className={styles.socialimg} src={"/img/" + key + ".png"} alt={_.startCase(key)}/>
+                <h3 className={styles.linktitle}>{_.startCase(key)}</h3>
+            </a>
+          </div>
+        })}
       </div>
     </div>
   )
@@ -28,11 +35,9 @@ export default function Home({ socialsData, snapLink }) {
 
 export async function getServerSideProps({ params }) {
   const socialsData = await getPeopleData(params.someone)
-  const snapLink = socialLink("snap", "felix.pratt")
   return {
     props: {
-      socialsData,
-      snapLink
+      socialsData
     }
   }
 }
