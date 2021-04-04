@@ -9,6 +9,7 @@ export default function Home({ socialsData }) {
       <div className={styles.sociallinks}>
         <Head>
           <title>{`${_.startCase(socialsData.name)}'s Socials`}</title>
+          <meta charSet="UTF-8"/>
         </Head>
         <div className={styles.user}>
           <img
