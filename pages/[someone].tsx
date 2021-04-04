@@ -3,12 +3,12 @@ import styles from '../styles/someone.module.css'
 import { getPeopleData } from '../lib/socials'
 import _ from 'lodash'
 
-export default function Home({ socialsData, userName }) {
+export default function Home({ socialsData }) {
   return (
     <div className={styles.container}>
       <div className={styles.sociallinks}>
         <Head>
-          <title>{`${_.startCase(userName)}'s Socials`}</title>
+          <title>{`${_.startCase(socialsData.name)}'s Socials`}</title>
         </Head>
         <div className={styles.user}>
           <img
@@ -18,7 +18,7 @@ export default function Home({ socialsData, userName }) {
             width={100}
             alt={socialsData.name + "'s Image"}
           />
-          <h1 className={styles.userh1}>Félix Pratt</h1>
+          <h1 className={styles.userh1}>{socialsData.name}</h1>
         </div>
         {Object.entries(socialsData.socials).map(([id, value]:[string, string]) => (
           <div>
@@ -35,11 +35,9 @@ export default function Home({ socialsData, userName }) {
 
 export async function getServerSideProps({ params }) {
   const socialsData = await getPeopleData(params.someone)
-  const userName = params.someone
   return {
     props: {
-      socialsData,
-      userName
+      socialsData
     }
   }
 }
