@@ -7,8 +7,4 @@ console.log(fileContents)
 const json = JSON.parse(fileContents)
 console.log(json)
 
-console.log("Entries")
-console.log(Object.entries(json.socials))
-Object.entries(json.socials).forEach(([key, value]) => {
-    console.log(key + " - " + value)
-})
+console.log(_.lowerCase("id"))

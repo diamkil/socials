@@ -3,12 +3,12 @@ import styles from '../styles/someone.module.css'
 import { getPeopleData } from '../lib/socials'
 import _ from 'lodash'
 
-export default function Home({ socialsData }) {
+export default function Home({ socialsData, userName }) {
   return (
     <div className={styles.container}>
       <div className={styles.sociallinks}>
         <Head>
-          <title>Felix's Socials</title>
+          <title>{`${_.startCase(userName)}'s Socials`}</title>
         </Head>
         <div className={styles.user}>
           <img
@@ -20,14 +20,14 @@ export default function Home({ socialsData }) {
           />
           <h1 className={styles.userh1}>Félix Pratt</h1>
         </div>
-        {Object.entries(socialsData.socials).forEach(([key, value]) => {
+        {Object.entries(socialsData.socials).map(([id, value]) => (
           <div>
-            <a href={value} className={styles.social}>
-                <img className={styles.socialimg} src={"/img/" + key + ".png"} alt={_.startCase(key)}/>
-                <h3 className={styles.linktitle}>{_.startCase(key)}</h3>
+            <a href={value} target="_blank" rel="noreferrer" className={styles.social}>
+                <img className={styles.socialimg} src={"/img/" + _.toLower(id) + ".png"} alt={_.startCase(id)}/>
+                <h3 className={styles.linktitle}>{_.startCase(id)}</h3>
             </a>
           </div>
-        })}
+        ))}
       </div>
     </div>
   )
@@ -35,9 +35,11 @@ export default function Home({ socialsData }) {
 
 export async function getServerSideProps({ params }) {
   const socialsData = await getPeopleData(params.someone)
+  const userName = params.someone
   return {
     props: {
-      socialsData
+      socialsData,
+      userName
     }
   }
 }

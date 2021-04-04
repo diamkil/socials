@@ -34,3 +34,28 @@
     margin-left:10px;
     color:#fff;
 }
+
+.social {
+    display:flex;
+    align-items:center;
+    background-color:#171717;
+    height:75px;
+    border-bottom:solid #363535;
+    border-width:1px 0;
+    text-decoration:none;
+}
+
+.social:visited {
+    color:#fff;
+}
+
+
+.socialimg {
+    height:55px;
+    padding:1%;
+    filter: invert(1);
+}
+
+.linktitle {
+    color:#fff;
+}
