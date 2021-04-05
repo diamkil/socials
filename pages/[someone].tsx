@@ -8,7 +8,7 @@ export default function Home({ socialsData }) {
     <div className={styles.container}>
       <div className={styles.sociallinks}>
         <Head>
-          <title>{`${_.startCase(socialsData.name)}'s Socials`}</title>
+          <title>{`${socialsData.name}'s Socials`}</title>
           <meta charSet="UTF-8"/>
           <meta property="og:title" content={`${_.startCase(socialsData.name)}'s Socials`}/>
           <meta property="og:site_name" content="Socials"/>
