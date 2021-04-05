@@ -1,6 +1,6 @@
 ## How to add users
 
-Users are stored in the folder "people" I have mine in there as an example. The one named default.json will be binded to the root directory. The other ones will the the url directory (example if it's named felix.json then url will be http://example.com/felix)
+Users are stored in the folder "people" I have mine in there as an example. The one named default.json will be binded to the root directory. The other ones will be the url directory (example if it's named felix.json then url will be http://example.com/felix)
 Supported socials (for now) are: 
 - Apple Music
 - Discord
