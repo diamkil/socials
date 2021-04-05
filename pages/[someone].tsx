@@ -10,6 +10,10 @@ export default function Home({ socialsData }) {
         <Head>
           <title>{`${_.startCase(socialsData.name)}'s Socials`}</title>
           <meta charSet="UTF-8"/>
+          <meta property="og:title" content={`${_.startCase(socialsData.name)}'s Socials`}/>
+          <meta property="og:site_name" content="Socials"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:image" content={socialsData.picture}/>
         </Head>
         <div className={styles.user}>
           <img
