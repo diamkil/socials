@@ -28,7 +28,13 @@ export default function Home({ socialsData }) {
         {Object.entries(socialsData.socials).map(([id, value]:[string, string]) => (
           <div>
             <a href={value} target="_blank" rel="noreferrer" className={styles.social}>
-                <img className={styles.socialimg} src={"/img/" + _.toLower(id) + ".png"} alt={_.startCase(id)}/>
+                <img
+                  className={styles.socialimg}
+                  src={"/img/" + _.toLower(id) + ".png"}
+                  alt={_.startCase(id)}
+                  height={55}
+                  width={55}
+                />
                 <h3 className={styles.linktitle}>{_.startCase(id)}</h3>
             </a>
           </div>
