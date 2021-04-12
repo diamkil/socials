@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/someone.module.css'
+import styles from '../styles/someone.module.scss'
 import { getPeopleData } from '../lib/socials'
-import _ from 'lodash'
+import { startCase, toLower } from 'lodash'
 
 export default function Home({ socialsData }) {
   return (
@@ -10,7 +10,7 @@ export default function Home({ socialsData }) {
         <Head>
           <title>{`${socialsData.name}'s Socials`}</title>
           <meta charSet="UTF-8"/>
-          <meta property="og:title" content={`${_.startCase(socialsData.name)}'s Socials`}/>
+          <meta property="og:title" content={`${startCase(socialsData.name)}'s Socials`}/>
           <meta property="og:site_name" content="Socials"/>
           <meta property="og:type" content="website"/>
           <meta property="og:image" content={socialsData.picture}/>
@@ -30,12 +30,12 @@ export default function Home({ socialsData }) {
             <a href={value} target="_blank" rel="noreferrer" className={styles.social}>
                 <img
                   className={styles.socialimg}
-                  src={"/img/" + _.toLower(id) + ".png"}
-                  alt={_.startCase(id)}
+                  src={"/img/" + toLower(id) + ".png"}
+                  alt={startCase(id)}
                   height={55}
                   width={55}
                 />
-                <h3 className={styles.linktitle}>{_.startCase(id)}</h3>
+                <h3 className={styles.linktitle}>{startCase(id)}</h3>
             </a>
           </div>
         ))}

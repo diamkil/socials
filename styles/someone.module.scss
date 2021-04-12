@@ -35,7 +35,8 @@
     color:#fff;
 }
 
-.social {
+.social,
+.social:visited {
     display:flex;
     align-items:center;
     background-color:#171717;
@@ -43,10 +44,6 @@
     border-bottom:solid #363535;
     border-width:1px 0;
     text-decoration:none;
-}
-
-.social:visited {
-    color:#fff;
 }
 
 
