@@ -1,3 +1,10 @@
+$background-color: #000;
+$user-background-color: #56878d;
+$user-border-color: #363535;
+$text-color: #fff;
+$social-background-color: #171717;
+$social-border-color: #363535;
+
 .container {
     font-family: Avenir,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -5,54 +12,54 @@
 }
 
 .sociallinks {
-    padding-top:0;
-    height:100vh;
-    background-color:#000;
+    padding-top: 0;
+    height: 100vh;
+    background-color: $background-color;
 }
 
 .user {
-    display:flex;
-    align-items:center;
-    background-color:#56878d;
-    border-bottom:solid #363535;
-    border-width:1px 0;
+    display: flex;
+    align-items: center;
+    background-color: $user-background-color;
+    border-bottom: solid $user-border-color;
+    border-width: 1px 0;
 }
 
 .userimg {
-    float:left;
-    border-radius:50%;
-    height:100px;
-    vertical-align:middle;
-    margin-left:1%;
-    margin-top:1%;
-    margin-bottom:1%;
+    float: left;
+    border-radius: 50%;
+    height: 100px;
+    vertical-align: middle;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .userh1 {
-    float:left;
-    overflow:hidden;
-    margin-left:10px;
-    color:#fff;
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    color: $text-color;
 }
 
 .social,
 .social:visited {
-    display:flex;
-    align-items:center;
-    background-color:#171717;
-    height:75px;
-    border-bottom:solid #363535;
-    border-width:1px 0;
-    text-decoration:none;
+    display: flex;
+    align-items: center;
+    background-color: $social-background-color;
+    height: 75px;
+    border-bottom:solid $social-border-color;
+    border-width: 1px 0;
+    text-decoration: none;
 }
 
 
 .socialimg {
-    height:55px;
-    padding:1%;
+    height: 55px;
+    padding: 1%;
     filter: invert(1);
 }
 
 .linktitle {
-    color:#fff;
+    color: $text-color;
 }
