@@ -1,5 +1,6 @@
 ## Changelog
 
+Optimized the code by not needing another file for the default value
 Github and Linkedin are now supported
 
 ## How to add users

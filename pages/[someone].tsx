@@ -70,7 +70,13 @@ export default function Home({ socialsData }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const socialsData = await getPeopleData(params.someone)
+  /* 
+    If a route is defined we use it as ID for the function
+    if it's not defined we use "default instead, this allows for not needing an index.tsx with hardcoded value"
+  */
+  const socialsData = params.someone ?
+    await getPeopleData(params.someone) :
+    await getPeopleData("default")
   return {
     props: {
       socialsData
