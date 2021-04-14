@@ -14,7 +14,7 @@ export default function Home({ socialsData }) {
 
           {/*
             1. Set title on discord, twitter, etc. Uses the name of the user which page it is from the json
-            2. Set the name of the site to be socials in social networks (discord, twitter, etc.)
+            2. Set the name of the site to be socials in social networks
             3. Define it as a website (it's a website)
             4. Set the preview image to be the user's picture which is shown on user's page
           */}
@@ -44,9 +44,9 @@ export default function Home({ socialsData }) {
         Object.entries(socialsData.socials).map(([id, value]:[string, string]) => (
           /* 
             1. We give a div to each Social Network so that it remains separated
-            2. We use an "a" tag which wraps everything else (Image and title). This allows to make the whole thing a button instead of only the text. We style on this too
+            2. We use an a tag which wraps everything else (Image and title). This allows to make the whole thing a button instead of only the text. We style on this too
             3. The src tag for img is made of /img/ which refers to the folder in public with the logos.
-               We use toLower from lodash to make the string fully lower case (In our json we use camelCase for social networks with multiple words so we want fully lowercase for images)
+               We use toLower from lodash to make the string fully lower case (In our json we use camelCase for social networks with multiple works so we want fully lowercase for images)
                Id refers to the vallue we mapped earlier.
                We also of course add .png to make it the link to the exact image
             4. For our h3 tag we use startCase from lodash because it will turn "camelCase" into "Start Case" Seperating the two words and applying capitalization
@@ -70,13 +70,7 @@ export default function Home({ socialsData }) {
 }
 
 export async function getServerSideProps({ params }) {
-  /* 
-    If a route is defined we use it as ID for the function
-    if it's not defined we use "default" instead, this allows for not needing an index.tsx with hardcoded value
-  */
-  const socialsData = params.someone ?
-    await getPeopleData(params.someone) :
-    await getPeopleData("default")
+  const socialsData = await getPeopleData(params.someone)
   return {
     props: {
       socialsData
