@@ -1,5 +1,6 @@
 ## Changelog
 
+Added support for websites
 Github and Linkedin are now supported
 
 ## How to add users
