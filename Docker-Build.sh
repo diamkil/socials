@@ -4,5 +4,4 @@ current_commit_tag=diamkil/$project:$current_commit
 latest_tag=diamkil/$project:latest
 
 docker build . -t $current_commit_tag -t $latest_tag
-docker image push $current_commit_tag
-docker image push $latest_tag
+docker image push {$current_commit_tag,$latest_tag}
