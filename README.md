@@ -1,5 +1,6 @@
 ## Changelog
 
+Added icons for naming Instagram either "insta" or "instagram" did the same for snapchat
 Added support for websites
 Github and Linkedin are now supported
 
@@ -11,9 +12,9 @@ Supported socials (for now) are:
 - Discord (discord)
 - Facebook (facebook)
 - Github (github)
-- Instagram (insta)
+- Instagram (insta or instagram)
 - Linkedin (linkedin)
-- Snapchat (snap)
+- Snapchat (snap or snapchat)
 - Spotify (spotify)
 - Twitter (twitter)
 
