@@ -11,3 +11,5 @@ echo "Pushing all built images"
 
 docker image push $current_commit_tag
 docker image push $latest_tag
+
+echo "Pushed $current_commit_tag and $latest_tag"
