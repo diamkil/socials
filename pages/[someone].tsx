@@ -31,7 +31,7 @@ export default function Home({ socialsData }) {
             src={socialsData.picture}
             height={100}
             width={100}
-            alt={socialsData.name + "'s Image"}
+            alt={`${socialsData.name}'s Image`}
           />
 
           <h1 className={styles.userh1}>{socialsData.name}</h1>
@@ -55,7 +55,7 @@ export default function Home({ socialsData }) {
             <a href={value} target="_blank" rel="noreferrer" className={styles.social}>
                 <img
                   className={styles.socialimg}
-                  src={"/img/" + toLower(id) + ".png"}
+                  src={`/img/${toLower(id)}.png`}
                   alt={startCase(id)}
                   height={55}
                   width={55}
