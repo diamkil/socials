@@ -1,3 +1,5 @@
+#!/bin/bash
+
 project=socials
 current_commit=$(git rev-parse --short HEAD)
 current_commit_tag=diamkil/$project:$current_commit
