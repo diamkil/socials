@@ -3,11 +3,11 @@ FROM node:lts-alpine
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY package.json yarn.lock /app
+COPY package.json yarn.lock /app/
 
 RUN yarn install
 
-COPY . /app
+COPY . /app/
 
 RUN yarn build
 

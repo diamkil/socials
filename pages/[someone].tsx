@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/someone.module.scss'
+import styles from '../styles/someone.module.css'
 import { getPeopleData } from '../lib/socials'
 import { startCase, toLower } from 'lodash'
 

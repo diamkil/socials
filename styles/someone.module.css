@@ -1,10 +1,3 @@
-$background-color: #000;
-$user-background-color: #56878d;
-$user-border-color: #363535;
-$text-color: #fff;
-$social-background-color: #171717;
-$social-border-color: #363535;
-
 .container {
     font-family: Avenir,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -14,14 +7,14 @@ $social-border-color: #363535;
 .sociallinks {
     padding-top: 0;
     height: 100vh;
-    background-color: $background-color;
+    background-color: var(--background-color);
 }
 
 .user {
     display: flex;
     align-items: center;
-    background-color: $user-background-color;
-    border-bottom: solid $user-border-color;
+    background-color: var(--user-background-color);
+    border-bottom: solid var(--user-border-color);
     border-width: 1px 0;
 }
 
@@ -39,16 +32,16 @@ $social-border-color: #363535;
     float: left;
     overflow: hidden;
     margin-left: 10px;
-    color: $text-color;
+    color: var(--text-color);
 }
 
 .social,
 .social:visited {
     display: flex;
     align-items: center;
-    background-color: $social-background-color;
+    background-color: var(--social-background-color);
     height: 75px;
-    border-bottom:solid $social-border-color;
+    border-bottom:solid var(--social-border-color);
     border-width: 1px 0;
     text-decoration: none;
 }
@@ -61,5 +54,5 @@ $social-border-color: #363535;
 }
 
 .linktitle {
-    color: $text-color;
+    color: var(--text-color);
 }

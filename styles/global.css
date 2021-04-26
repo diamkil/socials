@@ -1,0 +1,12 @@
+:root {
+    --background-color: hsl(0, 0%, 0%);
+    --user-background-color: hsl(187, 24%, 45%);
+    --user-border-color: hsl(0, 1%, 21%);
+    --text-color: hsl(0, 0%, 100%);
+    --social-background-color: hsl(0, 0%, 9%);
+    --social-border-color: hsl(0, 1%, 21%);
+}
+
+body {
+    margin: 0;
+}
