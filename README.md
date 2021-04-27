@@ -63,6 +63,8 @@ npm build
 npm run start
 ```
 
+You should be able to access the website on `localhost:3000`. Edit the `defaults.json` with your info and build the project to publish it!
+
 ## Contributing
 
 If you are contributing I can assume you know about `nodejs` and `yarn`, so start the project in development mode:
