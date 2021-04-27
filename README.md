@@ -10,7 +10,7 @@ Socials is a single-page website that stores all your social media and personal 
 
 ## How to add users
 
-Users are stored in the folder "people". There is a `.json` file to serve as an example. The one named `default.json` will be binded to the root directory. The other ones will be the url directory (example if it's named `felix.json` then url will be https://example.com/felix)
+Users are stored in the folder `/people`. There is a `.json` file to serve as an example. The one named `default.json` will be binded to the root directory. The other ones will be the url directory (example if it's named `felix.json` then url will be https://example.com/felix)
 
 Supported socials (for now) are: 
 - Apple Music (appleMusic) music
@@ -63,16 +63,17 @@ npm build
 npm run start
 ```
 
-You should be able to access the website on `localhost:3000`. Edit the `defaults.json` with your info and build the project to publish it!
+You should be able to access the website on `localhost:3000` or if using Docker, access the website on `localhost:7574`. Edit the `defaults.json` with your info and build the project to publish it!
 
 ## Contributing
 
-If you are contributing I assume you know about `nodejs` and `yarn`, so start the project in development mode and happy pull requesting:
+If you are contributing I assume you know about `nodejs` and `yarn`. We recommend using `yarn` for developemnt, so start the project in development mode and happy pull requesting:
 ```bash
 # yarn 🧶
 yarn install && yarn dev
-# npm 📦
+
+# OR npm 📦
 npm install && npm run dev
 ```
 
-If something is not at your liking, feel free to open an issue [here](https://github.com/diamkil/socials/issues)
+If something is not at your liking, feel free to open an issue [here](https://github.com/diamkil/socials/issues).
