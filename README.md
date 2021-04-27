@@ -1,11 +1,11 @@
 # Socials: Single Link You'll Ever Need to Share
-Socials is a single-page website that stores all your social media and personal websites to share. It is similar to tappy.tech and linktr.ee, but open-source and built on Next.js 👨🏽‍💻. Self-hosting or publishing as a static website using the source code or Docker recommended!
+Socials is a single-page website that stores all your social media and personal websites to share. It is similar to tappy.tech, sociallinks.co, compiled.social and linktr.ee, but open-source and built on Next.js 👨🏽‍💻. Self-hosting or publishing as a static website using the source code or Docker recommended!
 
 ## Changelog
 
 - Updated the icons to a higher resolution and similar design style
-- Added several new icons and rearranged the web interface. Minor changes to display the content neatly on mobile devices.
-- Added icons for naming Instagram either "insta" or "instagram" did the same for snapchat
+- Added several new icons (such as reddit, tumblr, dribbble, youtube and more), and rearranged the web interface to look pretty. Minor changes to display the content neatly on mobile devices.
+- Added icons for naming Instagram either 'insta' or 'instagram' did the same for snapchat
 - Added support for custom websites
 
 ## How to add users
