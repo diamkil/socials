@@ -18,7 +18,7 @@ export function getAllPeopleIds() {
 }
 
 /* This function is the one used to get the correct json file and parse the info from the filesystem. Id is the name of our variable which is given when calling the function */
-export async function getPeopleData(id:string) {
+export async function getPeopleData(id: string) {
     /* The direct path to our file is the directory from where code is being run and we add the name of the json file at the end */
     const fullPath = path.join(informationDirectory, `${id}.json`)
     /* We get everything in the file */
