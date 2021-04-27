@@ -67,7 +67,7 @@ You should be able to access the website on `localhost:3000`. Edit the `defaults
 
 ## Contributing
 
-If you are contributing I can assume you know about `nodejs` and `yarn`, so start the project in development mode:
+If you are contributing I assume you know about `nodejs` and `yarn`, so start the project in development mode and happy pull requesting:
 ```bash
 # yarn 🧶
 yarn install && yarn dev
@@ -75,4 +75,4 @@ yarn install && yarn dev
 npm install && npm run dev
 ```
 
-If something is not at your liking, feel free to open an issue
+If something is not at your liking, feel free to open an issue [here](https://github.com/diamkil/socials/issues)
