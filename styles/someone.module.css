@@ -61,14 +61,13 @@
 
 .social,
 .social:visited {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--social-background-color);
-  height: 75px;
-  border-bottom: solid var(--social-border-color);
-  border-width: 1px 0;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--social-background-color);
+    height: 75px;
+    border-bottom:solid var(--social-border-color);
+    border-width: 1px 0;
+    text-decoration: none;
 }
 
 .socialimg {
