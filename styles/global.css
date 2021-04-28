@@ -1,12 +1,13 @@
 :root {
     --background-color: hsl(0, 0%, 0%);
-    --user-background-color: hsl(187, 24%, 45%);
-    --user-border-color: hsl(0, 1%, 21%);
+    --user-background-color: hsl(190, 25%, 45%);
+    --user-border-color: hsl(0, 5%, 25%);
     --text-color: hsl(0, 0%, 100%);
-    --social-background-color: hsl(0, 0%, 9%);
-    --social-border-color: hsl(0, 1%, 21%);
+    --social-background-color: hsl(0, 0%, 10%);
+    --social-border-color: hsl(0, 5%, 20%);
 }
 
 body {
     margin: 0;
+    overflow: hidden;
 }

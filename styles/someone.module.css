@@ -1,38 +1,62 @@
 .container {
-    font-family: Avenir,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .sociallinks {
-    padding-top: 0;
-    height: 100vh;
-    background-color: var(--background-color);
+  padding-top: 0;
+  height: 100vh;
+  background-color: var(--background-color);
 }
 
 .user {
-    display: flex;
-    align-items: center;
-    background-color: var(--user-background-color);
-    border-bottom: solid var(--user-border-color);
-    border-width: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--user-background-color);
+  border-bottom: solid var(--user-border-color);
+  border-width: 1px 0;
 }
 
 .userimg {
-    float: left;
-    border-radius: 50%;
-    height: 100px;
-    vertical-align: middle;
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+  float: left;
+  border-radius: 50%;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .userh1 {
-    float: left;
-    overflow: hidden;
+  float: left;
+  padding-left: 5px;
+  overflow: hidden;
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .user {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+  }
+  .userh1 {
     margin-left: 10px;
-    color: var(--text-color);
+    float: none;
+    font-size: 2.25em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .userimg {
+    margin-left: 1%;
+    margin-top: 10px;
+    padding: 0;
+  }
 }
 
 .social,
@@ -46,13 +70,13 @@
     text-decoration: none;
 }
 
-
 .socialimg {
-    height: 55px;
-    padding: 1%;
-    filter: invert(1);
+  height: 55px;
+  padding: 1%;
+  padding-right: 10px;
+  filter: invert(1);
 }
 
 .linktitle {
-    color: var(--text-color);
+  color: var(--text-color);
 }
