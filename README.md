@@ -67,13 +67,12 @@ You should be able to access the website on `localhost:3000` or if using Docker,
 
 ## Contributing
 
-If you are contributing I assume you know about `nodejs` and `yarn`. We recommend using `yarn` for developemnt, so start the project in development mode and happy pull requesting:
+If you are contributing I assume you know about `nodejs` and `yarn`. We require using `yarn` for developemnt since it's not recommended to mix Yarn and NPM in the same project, so start the project in development mode and happy pull requesting:
 ```bash
 # yarn 🧶
-yarn install && yarn dev
+yarn install
 
-# OR npm 📦
-npm install && npm run dev
+yarn dev
 ```
 
 If something is not at your liking, feel free to open an issue [here](https://github.com/diamkil/socials/issues).
