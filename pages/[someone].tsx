@@ -18,7 +18,7 @@ export default function Home({ socialsData }) {
             3. Define it as a website (it's a website)
             4. Set the preview image to be the user's picture which is shown on user's page
           */}
-          <meta property="og:title" content={`${startCase(socialsData.name)}'s Socials`} />
+          <meta property="og:title" content={`${socialsData.name}'s Socials`} />
           <meta property="og:site_name" content="Socials" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content={socialsData.picture} />
