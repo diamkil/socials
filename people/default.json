@@ -1,10 +1,10 @@
 {
-    "name": "Félix Pratt",
-    "picture":  "https://img.dkil.ca/diamkil-avatar-200.png",
+    "name": "Socials Example",
+    "picture":  "https://img.dkil.ca/diamkil.png",
     "socials": {
-        "snapchat":  "https://www.snapchat.com/add/felix.pratt",
+        "snapchat":  "https://www.snapchat.com/add/example",
         "discord":  "https://discordapp.com/users/229225747133235200",
-        "instagram":  "https://www.instagram.com/felix.pratt",
-        "website": "https://diamkil.com"
+        "instagram":  "https://www.instagram.com/example",
+        "website": "https://example.com"
     }
 }
