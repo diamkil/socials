@@ -6,3 +6,4 @@ node_modules
 Docker-Build.sh
 .gitignore
 README.md
+.vscode
