@@ -1,9 +1,20 @@
+# GitHub
+.gitignore
 .git
+README.md
+
+# Docker
 Dockerfile
+
+# Node
 node_modules
 .env
+
+# Next
 .next
+
+# Docker 
 Docker-Build.sh
-.gitignore
-README.md
+
+# config files
 .vscode
