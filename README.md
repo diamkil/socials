@@ -38,29 +38,25 @@ Supported socials (for now) are:
 
 ## How to run
 
-The two options for running are either as a [docker container](https://registry.hub.docker.com/r/diamkil/socials) or host it using node.js/next.js.
-
-Once project is cloned you can go in the directory and run these `yarn` commands:
-```bash
-# Download dependencies
-yarn install
-# Build project
-yarn build
-# Start production build
-yarn start
+### [Docker](https://github.com/diamkil/socials/pkgs/container/socials) (recommended)
+```
+docker run -d \
+    --name=Socials \
+    -p 7574:3000/tcp \
+    -v /path/to/socials/people:/app/people \
+    ghcr.io/diamkil/socials:main
 ```
 
-Or run the following `npm` commands:
-```bash
-# Download dependencies
-npm install
-# Build project
-npm build
-# Start production build
-npm run start
+### Node.JS
+```
+git pull https://github.com/diamkil/socials
+cd socials
+yarn install (or npm i)
+yarn build (or npm run build)
+yarn start (or npm run start
 ```
 
-You should be able to access the website on `localhost:3000` or if using Docker, access the website on `localhost:7574`. Edit the `defaults.json` or create a new `.json` file with your info and build the project to see changes!
+You should be able to access the website on `localhost:3000` or if using Docker, access the website on `localhost:7574`. Edit the `default.json` or create a new `.json` file with your info and build the project to see changes!
 
 ## Contributing
 
