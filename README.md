@@ -1,4 +1,10 @@
 # Socials: Single Link You'll Ever Need to Share
+[![Docker](https://github.com/diamkil/socials/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/docker-publish.yml)
+[![CodeQL](https://github.com/diamkil/socials/actions/workflows/codeql.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/codeql.yml)
+![Code Size](https://img.shields.io/github/languages/code-size/diamkil/socials?label=Code%20Size)
+![Issues](https://img.shields.io/github/issues/diamkil/socials)
+![Pull Requests](https://img.shields.io/github/issues-pr/diamkil/socials)
+
 Socials is a single-page website that stores all your social media and personal websites to share. It is similar to tappy.tech, sociallinks.co, and linktr.ee, but open-source and built on Next.js. Self-hosting or publishing as a static website or Docker is recommended!
 
 ## Changelog
