@@ -33,8 +33,6 @@ Supported socials (for now) are:
 - Snapchat (`snap` or `snapchat`)
 - Spotify (`spotify`)
 - Tiktok (`tiktok`) _new_
-- Spotify (`spotify`)
-- Spotify (`spotify`)
 - Tumblr (`tumblr`) _new_
 - Twitter (`twitter`)
 - Vimeo (`vimeo`) _new_
