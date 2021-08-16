@@ -1,22 +1,34 @@
 {
   "name": "socials",
-  "version": "0.1.0",
-  "private": true,
+  "version": "2.0.0",
+  "main": "dist/app.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "tsc && sass --no-source-map styles/:public/css --style compressed",
+    "dev": "concurrently -n server,sass \"nodemon --exec ts-node --files src/app.ts\" \"sass --no-source-map --watch styles/:public/css --style compressed\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diamkil/socials.git"
+  },
+  "author": "diamkil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diamkil/socials/issues"
+  },
+  "homepage": "https://github.com/diamkil/socials#readme",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "next": "10.1.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-minify-html-2": "^1.0.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.168",
-    "@types/react": "^17.0.3",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.1",
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12",
     "prettier": "^2.3.0",
+    "sass": "^1.37.5",
+    "ts-node": "^10.2.0",
     "typescript": "^4.2.3"
   }
 }

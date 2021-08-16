@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- `${info.name}'s Socials` %></title>
+    <meta property="og:title" content="<%- `${info.name}'s Socials` %>" />
+    <meta property="og:site_name" content="Socials" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="<%- info.picture %>" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="alternate icon" href="<%- info.picture %>" />
+  </head>
+  <body>
+    <div class="user">
+      <img
+        src="<%- info.picture %>"
+        height="100px"
+        width="100px"
+        alt="<%- `${info.name}'s Profile Image` %>"
+      />
+      <h1><%- info.name %></h1>
+    </div>
+    <% info.socials.forEach(social => { %>
+    <div>
+      <a
+        href="<%- social.link %>"
+        target="_blank"
+        rel="noreferrer"
+        class="social"
+      >
+        <img
+          src="<%- `/img/${social.icon}.png` %>"
+          alt="<%- `${social.name}` %>"
+          height="55px"
+          width="55px"
+        />
+        <h3><%- social.name %></h3>
+      </a>
+    </div>
+    <% }); %>
+  </body>
+</html>

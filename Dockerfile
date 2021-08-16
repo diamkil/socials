@@ -1,12 +1,10 @@
 FROM node:lts-alpine AS build
 
-WORKDIR /app
-
-COPY package.json yarn.lock ./
-
-RUN yarn install
+WORKDIR /build
 
 COPY . .
+
+RUN yarn install
 
 RUN yarn build
 RUN yarn install --production
@@ -15,11 +13,12 @@ FROM node:lts-alpine
 
 WORKDIR /app
 
-COPY --from=build /app/public ./public
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /build/public ./public
+COPY --from=build /build/dist ./dist
+COPY --from=build /build/node_modules ./node_modules
+COPY --from=build /build/views ./views
 COPY people/ ./people/
 
-EXPOSE 3000
+EXPOSE 3005
 
-CMD ["node_modules/.bin/next", "start"]
+CMD node dist/app.js
