@@ -3,7 +3,7 @@ const minify = require('express-minify-html-2');
 import getData from './lib/getData';
 
 const app = express();
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 7574;
 const defaultID = process.env.DEFID || 'default';
 
 app.set('view engine', 'ejs');

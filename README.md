@@ -1,4 +1,5 @@
 # Socials: Single Link You'll Ever Need to Share
+
 [![CI/CD](https://github.com/diamkil/socials/actions/workflows/main.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/main.yml)
 ![Code Size](https://img.shields.io/github/languages/code-size/diamkil/socials?label=Code%20Size)
 ![Issues](https://img.shields.io/github/issues/diamkil/socials)
@@ -18,19 +19,20 @@ Socials is a single-page website that stores all your social media and personal 
 
 Users are stored in the folder `/people`. There is a `.json` file to serve as an example. The one named `default.json` will be binded to the base directory. The other ones will be the url directory (example if it's named `felix.json` then url will be https://example.com/felix)
 
-Supported socials (for now) are: 
+Supported socials (for now) are:
+
 - Apple Music (`appleMusic`)
 - Behance (`behance`) _new_
 - Discord (`discord`)
 - Dribbble (`dribbble`) _new_
 - Facebook (`facebook`)
 - Github (`github`)
-- Instagram (`insta` or `instagram`)
+- Instagram (`instagram`)
 - Linkedin (`linkedin`)
 - Medium (`medium`) _new_
 - Pinterest (`pinterest`) _new_
 - Reddit (`reddit`) _new_
-- Snapchat (`snap` or `snapchat`)
+- Snapchat (`snapchat`)
 - Spotify (`spotify`)
 - Tiktok (`tiktok`) _new_
 - Tumblr (`tumblr`) _new_
@@ -43,6 +45,7 @@ Supported socials (for now) are:
 ## How to run
 
 ### [Docker](https://github.com/diamkil/socials/pkgs/container/socials) (recommended)
+
 ```
 docker run -d \
     --name=Socials \
@@ -52,6 +55,7 @@ docker run -d \
 ```
 
 ### Node.JS
+
 ```
 git pull https://github.com/diamkil/socials
 cd socials
@@ -65,6 +69,7 @@ You should be able to access the website on `localhost:3000` or if using Docker,
 ## Contributing
 
 If you are contributing, we require using `yarn` for development, so start the project in `dev` mode and happy pull requesting:
+
 ```bash
 # install the dependencies
 yarn install

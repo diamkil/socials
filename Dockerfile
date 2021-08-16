@@ -19,6 +19,6 @@ COPY --from=build /build/node_modules ./node_modules
 COPY --from=build /build/views ./views
 COPY people/ ./people/
 
-EXPOSE 3005
+EXPOSE 7574
 
 CMD node dist/app.js
