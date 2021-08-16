@@ -48,7 +48,7 @@ Supported socials (for now) are:
 ```
 docker run -d \
     --name=Socials \
-    -p 7574:3000/tcp \
+    -p 7574:7574/tcp \
     -v /path/to/socials/people:/app/people \
     ghcr.io/diamkil/socials:main
 ```
@@ -63,7 +63,7 @@ yarn build (or npm run build)
 yarn start (or npm run start
 ```
 
-You should be able to access the website on `localhost:3000` or if using Docker, access the website on `localhost:7574`. Edit the `default.json` or create a new `.json` file with your info and build the project to see changes!
+You should be able to access the website on `localhost:7574`. Edit the `default.json` or create a new `.json` file with your info!
 
 ## Contributing
 
