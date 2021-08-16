@@ -12,8 +12,6 @@ Socials is a single-page website that stores all your social media and personal 
 - Rewrote the app using Express and EJS, json file structure changed!
 - Updated the icons to a higher resolution and similar design style
 - Added several new icons (such as reddit, tumblr, dribbble, youtube and more), and rearranged the web interface to look pretty. Minor changes to display the content neatly on mobile devices.
-- Added icons for naming Instagram either 'insta' or 'instagram' and did the same for Snapchat
-- Added support and icon for custom websites
 
 ## How to add users
 
@@ -21,26 +19,27 @@ Users are stored in the folder `/people`. There is a `.json` file to serve as an
 
 Supported socials (for now) are:
 
-- Apple Music (`appleMusic`)
-- Behance (`behance`) _new_
+- Apple Music (`applemusic`)
+- Behance (`behance`)
 - Discord (`discord`)
-- Dribbble (`dribbble`) _new_
+- Dribbble (`dribbble`)
 - Facebook (`facebook`)
 - Github (`github`)
 - Instagram (`instagram`)
 - Linkedin (`linkedin`)
-- Medium (`medium`) _new_
-- Pinterest (`pinterest`) _new_
-- Reddit (`reddit`) _new_
+- Medium (`medium`)
+- Pinterest (`pinterest`)
+- Reddit (`reddit`)
 - Snapchat (`snapchat`)
 - Spotify (`spotify`)
-- Tiktok (`tiktok`) _new_
-- Tumblr (`tumblr`) _new_
+- Tiktok (`tiktok`)
+- Tumblr (`tumblr`)
+- Twitch (`twitch`) _new_
 - Twitter (`twitter`)
-- Vimeo (`vimeo`) _new_
-- Custom Website (`website`) _new_
-- Whatsapp (`whatsapp`) _new_
-- Youtube (`youtube`) _new_
+- Vimeo (`vimeo`)
+- Custom Website (`website`)
+- Whatsapp (`whatsapp`)
+- Youtube (`youtube`)
 
 ## How to run
 
