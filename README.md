@@ -1,6 +1,5 @@
 # Socials: Single Link You'll Ever Need to Share
-[![Docker](https://github.com/diamkil/socials/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/docker-publish.yml)
-[![CodeQL](https://github.com/diamkil/socials/actions/workflows/codeql.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/codeql.yml)
+[![CI/CD](https://github.com/diamkil/socials/actions/workflows/main.yml/badge.svg)](https://github.com/diamkil/socials/actions/workflows/main.yml)
 ![Code Size](https://img.shields.io/github/languages/code-size/diamkil/socials?label=Code%20Size)
 ![Issues](https://img.shields.io/github/issues/diamkil/socials)
 ![Pull Requests](https://img.shields.io/github/issues-pr/diamkil/socials)
