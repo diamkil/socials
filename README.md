@@ -9,6 +9,7 @@ Socials is a single-page website that stores all your social media and personal 
 
 ## Changelog
 
+- Added Phone and Email
 - Rewrote the app using Express and EJS, json file structure changed!
 - Updated the icons to a higher resolution and similar design style
 - Added several new icons (such as reddit, tumblr, dribbble, youtube and more), and rearranged the web interface to look pretty. Minor changes to display the content neatly on mobile devices.
@@ -28,6 +29,7 @@ Supported socials (for now) are:
 - Instagram (`instagram`)
 - Linkedin (`linkedin`)
 - Medium (`medium`)
+- Phone (`phone`) _new_
 - Pinterest (`pinterest`)
 - Reddit (`reddit`)
 - Snapchat (`snapchat`)
